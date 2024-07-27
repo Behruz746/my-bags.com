@@ -3,6 +3,7 @@ import theme from "./styles/theme";
 import { Button, Container, ThemeProvider } from "@mui/material";
 import useGetTitle from "./hook/GetTitle";
 import Appbar from "./components/appbar";
+import Banner from "./components/banner";
 
 function App() {
   useGetTitle("React Material UI - Home");
@@ -16,7 +17,7 @@ function App() {
         }}
       >
         <Appbar />
-        <Button variant="contained">Test</Button>
+        <Banner />
       </Container>
     </ThemeProvider>
   );
